@@ -1,0 +1,108 @@
+﻿column_name;probable_meaning;null_handling_recommendation
+id;Identificador único del préstamo;Drop rows if missing
+loan_amnt;Monto total del préstamo solicitado;Impute with median
+funded_amnt;Monto total financiado por Lending Club;Impute with median
+funded_amnt_inv;Monto financiado por inversionistas;Impute with median
+installment;Monto del pago mensual del préstamo;Impute with median
+annual_inc;Ingreso anual del solicitante;Impute with median
+delinq_2yrs;Número de veces que el cliente ha estado en mora en los últimos 2 años;Impute with median
+fico_range_low;Valor inferior del rango FICO al momento del préstamo;Impute with median
+fico_range_high;Valor superior del rango FICO;Impute with median
+open_acc;Número de cuentas de crédito abiertas;Impute with median
+pub_rec;Número de registros públicos negativos (ej. bancarrotas);Impute with median
+revol_bal;Saldo actual de líneas de crédito rotativo;Impute with median
+total_acc;Número total de cuentas de crédito del solicitante;Impute with median
+out_prncp;Capital pendiente del préstamo;Impute with median
+out_prncp_inv;Capital pendiente invertido por los inversionistas;Impute with median
+total_pymnt;Monto total pagado por el prestatario;Impute with median
+total_pymnt_inv;Monto total pagado a los inversionistas;Impute with median
+total_rec_prncp;Principal total recuperado;Impute with median
+total_rec_int;Intereses totales recibidos;Impute with median
+total_rec_late_fee;Total de cargos por pagos tardíos recibidos;Impute with median
+recoveries;Monto recuperado de préstamos en incumplimiento;Impute with median
+collection_recovery_fee;Cargo cobrado por recuperación de cobranza;Impute with median
+last_pymnt_amnt;Monto del último pago realizado;Impute with median
+last_fico_range_high;Valor más alto del rango FICO al momento del último reporte;Impute with median
+last_fico_range_low;Valor más bajo del rango FICO al momento del último reporte;Impute with median
+collections_12_mths_ex_med;Número de cobranzas en los últimos 12 meses excluyendo médicas;Impute with median
+policy_code;Código de política de préstamo;Impute with mode ('Unknown' or most frequent)
+acc_now_delinq;Número de cuentas actualmente en mora;Impute with median
+tot_coll_amt;Monto total de cuentas en cobranza;Impute with median
+tot_cur_bal;Saldo actual total de todas las cuentas;Impute with median
+total_rev_hi_lim;Límite total de crédito en cuentas rotativas;Impute with median
+acc_open_past_24mths;Número de cuentas abiertas en los últimos 24 meses;Impute with median
+chargeoff_within_12_mths;Número de cuentas canceladas en los últimos 12 meses;Impute with median
+delinq_amnt;Monto actualmente en mora;Impute with median
+mo_sin_old_rev_tl_op;Meses desde la apertura de la cuenta rotativa más antigua;Impute with median
+mo_sin_rcnt_rev_tl_op;Meses desde la apertura de la cuenta rotativa más reciente;Impute with median
+mo_sin_rcnt_tl;Meses desde la apertura de la línea de crédito más reciente;Impute with median
+mort_acc;Número de cuentas hipotecarias;Impute with median
+num_accts_ever_120_pd;Número de cuentas con más de 120 días de atraso;Impute with median
+num_actv_bc_tl;Número de líneas de crédito bancario activas;Impute with median
+num_actv_rev_tl;Número de líneas rotativas activas;Impute with median
+num_bc_sats;Número de cuentas de crédito bancarias satisfactorias;Impute with median
+num_bc_tl;Número de líneas de crédito bancario;Impute with median
+num_il_tl;Número de líneas de crédito a plazos;Impute with median
+num_op_rev_tl;Número de líneas rotativas abiertas;Impute with median
+num_rev_tl_bal_gt_0;Número de líneas rotativas con saldo;Impute with median
+num_sats;Número de cuentas satisfactorias;Impute with median
+num_tl_30dpd;Número de cuentas con mora de 30 días;Impute with median
+num_tl_90g_dpd_24m;Número de cuentas con mora grave en los últimos 24 meses;Impute with median
+num_tl_op_past_12m;Número de cuentas abiertas en los últimos 12 meses;Impute with median
+pub_rec_bankruptcies;Número de registros públicos por bancarrota;Impute with mode ('Unknown' or most frequent)
+tax_liens;Número de embargos fiscales;Impute with mode ('Unknown' or most frequent)
+tot_hi_cred_lim;Límite de crédito más alto entre todas las cuentas;Impute with median
+total_bal_ex_mort;Saldo total excluyendo hipotecas;Impute with median
+total_bc_limit;Límite total de tarjetas de crédito;Impute with median
+total_il_high_credit_limit;Límite más alto de líneas de crédito a plazos;Impute with median
+inq_last_6mths;Número de consultas crediticias en los últimos 6 meses;Impute with median
+mths_since_recent_bc;Meses desde la tarjeta de crédito más reciente;Impute with median
+bc_open_to_buy;Crédito disponible en cuentas de tarjetas de crédito;Impute with median
+percent_bc_gt_75;Porcentaje de tarjetas de crédito con más del 75% utilizado;Impute with median
+bc_util;Utilización de crédito bancario;Impute with median
+mo_sin_old_il_acct;Meses desde la apertura de la línea de crédito a plazo más antigua;Impute with median
+num_tl_120dpd_2m;Número de cuentas con más de 120 días de mora en 2 meses;Impute with median
+mths_since_recent_inq;Meses desde la última consulta crediticia;Impute with median
+open_acc_6m;Número de cuentas abiertas en los últimos 6 meses;Impute with median
+total_cu_tl;Número total de cuentas de crédito desconocidas (CU);Impute with median
+inq_last_12m;Consultas de crédito en los últimos 12 meses;Impute with median
+all_util;Utilización de todas las líneas de crédito;Impute with median
+mths_since_rcnt_il;Meses desde la última línea de crédito a plazo;Impute with median
+il_util;Porcentaje utilizado de líneas de crédito a plazos;Impute with median
+mths_since_last_delinq;Meses desde la última mora;Impute with median
+mths_since_recent_revol_delinq;Meses desde la última mora en cuenta rotativa;Impute with median
+mths_since_last_major_derog;Meses desde el último reporte negativo importante;Impute with median
+mths_since_last_record;Meses desde el último registro público negativo;Impute with median
+annual_inc_joint;Ingreso anual conjunto (solicitante + co-solicitante);Impute with median
+dti_joint;Relación deuda-ingreso conjunta;Impute with median
+sec_app_fico_range_low;Rango FICO inferior del co-solicitante;Impute with median
+sec_app_fico_range_high;Rango FICO superior del co-solicitante;Impute with median
+sec_app_inq_last_6mths;Consultas de crédito del co-solicitante en los últimos 6 meses;Impute with median
+sec_app_mort_acc;Número de hipotecas del co-solicitante;Impute with median
+sec_app_open_acc;Número de cuentas abiertas del co-solicitante;Impute with median
+sec_app_open_act_il;Líneas de crédito a plazo abiertas del co-solicitante;Impute with median
+sec_app_num_rev_accts;Número de cuentas rotativas del co-solicitante;Impute with median
+sec_app_chargeoff_within_12_mths;Cuentas del co-solicitante canceladas en los últimos 12 meses;Impute with median
+sec_app_collections_12_mths_ex_med;Cobros del co-solicitante en últimos 12 meses (excluyendo médicos);Impute with median
+revol_bal_joint;Saldo rotativo conjunto;Impute with median
+sec_app_revol_util;Utilización rotativa del co-solicitante;Impute with median
+hardship_amount;Monto relacionado a situación de dificultad financiera;Impute with median
+hardship_payoff_balance_amount;Saldo restante para pagar bajo situación de dificultad;Impute with median
+hardship_last_payment_amount;Último pago bajo programa de dificultad;Impute with median
+orig_projected_additional_accrued_interest;Interés adicional proyectado en caso de dificultad;Impute with median
+deferral_term;Duración del período de diferimiento;Impute with median
+hardship_length;Duración del programa de dificultad financiera;Impute with median
+hardship_dpd;Días de mora bajo programa de dificultad;Impute with median
+inq_fi;Número de consultas de crédito financieras en los últimos 6 meses;Impute with median + create categories
+open_act_il;Número de líneas de crédito a plazo actualmente activas;Impute with median + create categories
+open_il_12m;Número de líneas de crédito a plazo abiertas en los últimos 12 meses;Impute with median + create categories
+open_il_24m;Número de líneas de crédito a plazo abiertas en los últimos 24 meses;Impute with median + create categories
+open_rv_12m;Número de líneas rotativas abiertas en los últimos 12 meses;Impute with median + create categories
+open_rv_24m;Número de líneas rotativas abiertas en los últimos 24 meses;Impute with median + create categories
+mths_since_recent_bc_dlq;Meses desde la última mora en tarjeta de crédito;Impute with median + create binary flag
+num_rev_accts;Número total de cuentas rotativas del solicitante;Impute with median + create categories
+pct_tl_nvr_dlq;Porcentaje de cuentas que nunca han estado en mora;Impute with median + create categories
+avg_cur_bal;Saldo promedio actual de todas las cuentas;Impute with median + create categories
+max_bal_bc;Saldo máximo en tarjetas de crédito;Impute with median + create categories
+total_bal_il;Saldo total en líneas de crédito a plazo;Impute with median + create categories
+dti;Relación deuda-ingreso del solicitante;Impute with median + create categories

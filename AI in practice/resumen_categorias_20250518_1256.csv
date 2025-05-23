@@ -1,0 +1,35 @@
+﻿column_name;Tipo_Dato;Valores_Unicos;Valores_Nulos;Porcentaje_Nulos;Valor_Mas_Frecuente;Frecuencia_Valor_Mas_Comun;Porcentaje_Valor_Mas_Comun;probable_significado;conservar_columna;recomendacion_nulos
+term;object;2;0;0.00%; 36 months;1434328;70.66%;Duración del préstamo en meses;Sí - Variable clave;No aplica - Sin nulos
+int_rate;object;310;0;0.00%; 11.99%;49942;2.46%;Tasa de interés del préstamo;Sí - Variable clave;No aplica - Sin nulos
+grade;object;7;0;0.00%;C;591304;29.13%;Calificación crediticia general;Sí - Variable clave;No aplica - Sin nulos
+sub_grade;object;35;0;0.00%;C1;132442;6.52%;Subcalificación crediticia detallada;Sí - Variable clave;No aplica - Sin nulos
+emp_title;object;386943;152606;7.52%;Teacher;37991;1.87%;Título del empleo del solicitante;No - Demasiados valores únicos;Imputar con 'Unknown' + crear flag binario
+emp_length;object;12;137908;6.79%;10+ years;677437;33.37%;Años de experiencia laboral;Sí - Variable importante;Imputar con 'Unknown' + crear flag binario
+home_ownership;object;5;0;0.00%;MORTGAGE;995479;49.04%;Tipo de vivienda del solicitante;Sí - Variable clave;No aplica - Sin nulos
+verification_status;object;3;0;0.00%;Source Verified;833961;41.08%;Estado de verificación de ingresos;Sí - Variable importante;No aplica - Sin nulos
+issue_d;object;60;0;0.00%;01-03-2016;61992;3.05%;Fecha de emisión del préstamo;Sí - Variable temporal clave;No aplica - Sin nulos
+loan_status;object;7;0;0.00%;Fully Paid;1239089;61.04%;Estado actual del préstamo;Sí - Variable objetivo;No aplica - Sin nulos
+pymnt_plan;object;1;0;0.00%;n;2029952;100.00%;Plan de pago del préstamo;No - Valor constante;No aplica - Sin nulos
+url;object;2029952;0;0.00%;https://lendingclub.com/browse/loanDetail.action?loan_id=120122535;1;0.00%;URL del préstamo;No - Identificador único;No aplica - Sin nulos
+purpose;object;14;0;0.00%;debt_consolidation;1146650;56.49%;Propósito del préstamo;Sí - Variable importante;No aplica - Sin nulos
+title;object;2072;23305;1.15%;Debt consolidation;1129836;55.66%;Título descriptivo del préstamo;No - Redundante con purpose;Imputar con valor más frecuente
+zip_code;object;954;1;0.00%;112xx;21188;1.04%;Código postal del solicitante;Sí - Variable geográfica;Imputar con valor más frecuente
+addr_state;object;51;0;0.00%;CA;276361;13.61%;Estado de residencia del solicitante;Sí - Variable geográfica;No aplica - Sin nulos
+earliest_cr_line;object;743;0;0.00%;sept-04;14409;0.71%;Fecha de la primera línea de crédito;Sí - Variable temporal;No aplica - Sin nulos
+revol_util;object;1332;1587;0.08%;0%;11375;0.56%;Porcentaje de utilización de crédito rotativo;Sí - Variable importante;Imputar con mediana + crear flag binario
+initial_list_status;object;2;0;0.00%;w;1495650;73.68%;Estado inicial de listado del préstamo;Sí - Variable importante;No aplica - Sin nulos
+last_pymnt_d;object;81;2190;0.11%;may-20;461172;22.72%;Fecha del último pago;Sí - Variable temporal;Imputar con valor más frecuente
+next_pymnt_d;object;11;1552753;76.49%;jun-20;420970;20.74%;Fecha del próximo pago;No - Alta tasa de nulos;Eliminar columna - 76.49% nulos
+last_credit_pull_d;object;78;58;0.00%;may-20;940409;46.33%;Fecha de la última consulta crediticia;Sí - Variable temporal;Imputar con valor más frecuente
+application_type;object;2;0;0.00%;Individual;1909242;94.05%;Tipo de aplicación del préstamo;Sí - Variable importante;No aplica - Sin nulos
+verification_status_joint;object;4;1914222;94.30%;Not Verified;57403;2.83%;Estado de verificación del co-solicitante;No - Alta tasa de nulos;Eliminar columna - 94.30% nulos
+sec_app_earliest_cr_line;object;664;1921931;94.68%;Aug-2006;998;0.05%;Fecha de primera línea de crédito del co-solicitante;No - Alta tasa de nulos;Eliminar columna - 94.68% nulos
+hardship_flag;object;3;21198;1.04%;N;1953148;96.22%;Indicador de dificultad financiera;Sí - Variable importante;Imputar con 'N' + crear flag binario
+hardship_type;object;7;1956674;96.39%;CVD19SKIP;60208;2.97%;Tipo de dificultad financiera;No - Alta tasa de nulos;Eliminar columna - 96.39% nulos
+hardship_reason;object;18;1956678;96.39%;INCOMECURT;39556;1.95%;Razón de la dificultad financiera;No - Alta tasa de nulos;Eliminar columna - 96.39% nulos
+hardship_status;object;5;1956677;96.39%;ACTIVE;55603;2.74%;Estado de la dificultad financiera;No - Alta tasa de nulos;Eliminar columna - 96.39% nulos
+hardship_start_date;object;42;1956674;96.39%;Apr-2020;48297;2.38%;Fecha de inicio de la dificultad;No - Alta tasa de nulos;Eliminar columna - 96.39% nulos
+hardship_end_date;object;45;1956674;96.39%;jun-20;36759;1.81%;Fecha de fin de la dificultad;No - Alta tasa de nulos;Eliminar columna - 96.39% nulos
+payment_plan_start_date;object;44;1956674;96.39%;Apr-2020;35931;1.77%;Fecha de inicio del plan de pago;No - Alta tasa de nulos;Eliminar columna - 96.39% nulos
+hardship_loan_status;object;13;1956776;96.40%;ACTIVE;52603;2.59%;Estado del préstamo bajo dificultad;No - Alta tasa de nulos;Eliminar columna - 96.40% nulos
+debt_settlement_flag;object;2;0;0.00%;N;1981457;97.61%;Indicador de acuerdo de deuda;Sí - Variable importante;No aplica - Sin nulos
